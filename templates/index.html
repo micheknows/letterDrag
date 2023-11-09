@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+
+  <h1 class="text-center">Letter Match Game</h1>
+
+  <div id="uppercase-letters" class="row">
+    {% for letter in uppercase_letters %}
+      <div class="col-6">
+        <div class="uppercase-letter btn btn-primary m-2" >{{ letter }}</div>
+        <div class="slot empty-slot border border-3 border-secondary m-2 inline"></div>
+      </div>
+    {% endfor %}
+  </div>
+<center>
+<button id="clear">Next</button>
+</center>
+<div class="row mt-5">
+  <div class="col d-flex flex-wrap">
+    {% for letter in lowercase_letters %}
+      <div class="lowercase-letter btn btn-outline-primary m-2"  draggable="true">{{ letter }}</div>
+    {% endfor %}
+  </div>
+</div>
+
+</div>
+
+{% endblock %}

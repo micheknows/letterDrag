@@ -1,0 +1,60 @@
+/* Style the letter tiles */
+.letter-tile {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+/* Make matched letters green */
+.letter-tile.matched {
+  background-color: lightgreen;
+}
+
+/* Style the game board */
+#board {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style the empty slots */
+.empty-slot {
+  width: 120px;
+  height: 120px;
+  border: 1px dashed #aaa;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* General styles */
+body {
+  font-family: sans-serif;
+}
+
+.uppercase-letter, letter-value, slot{
+  font-size: 8em; /* default is 1rem */
+}
+
+.slot{
+  font-size: 5em;
+  color: darkblue;
+  background-color: yellow;
+}
+
+
+#clear {
+  padding: 10px 20px;
+  font-size: 6rem;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+}
